@@ -46,9 +46,11 @@ Para este proyecto no se requeria persistencia de estado por lo caul no se agreg
 
 ## **Por ultimo**:
 
-Bienvenido el feeback!!
+Esta este es el deploy de la app https://santiagocxa.github.io/nuwe-mwc-hackathon-front/#/
 
-hay mucho que podria aprender de vos!
+**Bienvenido el feeback!!**
+
+**hay mucho que podria aprender de vos!**
 
 
 
