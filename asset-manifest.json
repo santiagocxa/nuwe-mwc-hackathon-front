@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/nuwe-mwc-hackathon-front/static/css/main.d489ae03.chunk.css",
+    "main.js": "/nuwe-mwc-hackathon-front/static/js/main.3ccc999a.chunk.js",
+    "main.js.map": "/nuwe-mwc-hackathon-front/static/js/main.3ccc999a.chunk.js.map",
+    "runtime-main.js": "/nuwe-mwc-hackathon-front/static/js/runtime-main.b381059a.js",
+    "runtime-main.js.map": "/nuwe-mwc-hackathon-front/static/js/runtime-main.b381059a.js.map",
+    "static/js/2.6f8b5df6.chunk.js": "/nuwe-mwc-hackathon-front/static/js/2.6f8b5df6.chunk.js",
+    "static/js/2.6f8b5df6.chunk.js.map": "/nuwe-mwc-hackathon-front/static/js/2.6f8b5df6.chunk.js.map",
+    "static/js/3.201c058c.chunk.js": "/nuwe-mwc-hackathon-front/static/js/3.201c058c.chunk.js",
+    "static/js/3.201c058c.chunk.js.map": "/nuwe-mwc-hackathon-front/static/js/3.201c058c.chunk.js.map",
+    "index.html": "/nuwe-mwc-hackathon-front/index.html",
+    "static/css/main.d489ae03.chunk.css.map": "/nuwe-mwc-hackathon-front/static/css/main.d489ae03.chunk.css.map",
+    "static/js/2.6f8b5df6.chunk.js.LICENSE.txt": "/nuwe-mwc-hackathon-front/static/js/2.6f8b5df6.chunk.js.LICENSE.txt",
+    "static/media/Background.d0f96ff7.png": "/nuwe-mwc-hackathon-front/static/media/Background.d0f96ff7.png",
+    "static/media/developer.f1518902.png": "/nuwe-mwc-hackathon-front/static/media/developer.f1518902.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.b381059a.js",
+    "static/js/2.6f8b5df6.chunk.js",
+    "static/css/main.d489ae03.chunk.css",
+    "static/js/main.3ccc999a.chunk.js"
+  ]
+}
