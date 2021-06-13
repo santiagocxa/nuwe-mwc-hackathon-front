@@ -44,7 +44,6 @@
   visibility: hidden;
 }
 
-
 .Passed {
   color: var(--primary-green);
   visibility: visible;
@@ -54,8 +53,6 @@
   color: red;
   visibility: visible;
 }
-
-
 
 .TextBox-info--select {
   position: absolute;
@@ -77,4 +74,6 @@
   background: white;
   outline: none;
   cursor: pointer;
+  bottom: 3px;
+  padding-left: 3px;
 }

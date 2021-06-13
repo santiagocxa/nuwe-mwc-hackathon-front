@@ -13,6 +13,7 @@ const Register = (props) => {
     disabledButton: true,
   });
   const [disabledButton, setDisabledButton] = useState(true);
+
   const data = {
     title: 'Register your account',
     display: false,
@@ -24,11 +25,17 @@ const Register = (props) => {
 
   const handleOnSubmit = (event) => {
     event.preventDefault();
-    console.log('presionado');
     setTimeout(() => {
       props.history.push('/end-profile');
     }, 500);
   };
+
+  /**
+     En el siguiente componente se reutiliza el componente de las cajas de texto
+     y se extienden las funsionalidades con las propiedades enviadas, 
+     esto se realiza para cada unas de las paginas
+    
+    */
 
   return (
     <div className='Register'>

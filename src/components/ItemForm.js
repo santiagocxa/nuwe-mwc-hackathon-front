@@ -12,8 +12,21 @@ const ItemForm = (props) => {
     display,
     route,
   } = props.data || [];
+
+  /**
+     En el siguiente componente se reutiliza el componente de las tarjetas
+     de inicio se seccion y se extienden las funsionalidades con las propiedades enviadas, 
+     esto se realiza para cada unas de las paginas
+    
+    */
+
   return (
     <div className='ItemForm'>
+      {/**
+         En el siguiente fracmento de codigo se renderiza un encabeza o 
+         especie de header que persisten en las paginas de registro
+      */}
+
       {display === false && (
         <div className='ItemForm-title'>
           <Link to={route} className='ItemForm-title-button'>
@@ -33,6 +46,7 @@ const ItemForm = (props) => {
           {description}
         </p>
       </div>
+
       {display === true && (
         <>
           <Card />

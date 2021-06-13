@@ -24,19 +24,25 @@ const CheckProfile = (props) => {
 
   const handleOnSubmit = (event) => {
     event.preventDefault();
-    console.log('presionado');
     setTimeout(() => {
-      props.history.push('/check-profile');
+      props.history.push('/welcome');
     }, 500);
   };
+
+  /**
+     En el siguiente componente se reutiliza el componente de las cajas de texto
+     y se extienden las funsionalidades con las propiedades enviadas, 
+     esto se realiza para cada unas de las paginas
+    
+    */
 
   return (
     <div className='CheckProfile'>
       <ItemForm data={data} />
       <form className='form' onSubmit={handleOnSubmit}>
         <TextBox
-          title='Card Numbre'
-          name='cardNumbre'
+          title='Card Number'
+          name='cardNumber'
           type='text'
           placeholder='Enter your card number'
           value={form.cardNumber}
@@ -56,7 +62,7 @@ const CheckProfile = (props) => {
           form={form}
           setForm={setForm}
           setDisabledButton={setDisabledButton}
-          expressionRegular={expression.nameUser}
+          expressionRegular={expression.securityCode}
         />
         <Button title={data.title} disableButton={disabledButton} />
       </form>

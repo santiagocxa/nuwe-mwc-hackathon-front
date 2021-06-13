@@ -14,7 +14,6 @@ const EndProfile = (props) => {
 
   const [disabledButton, setDisabledButton] = useState(true);
 
-  
   const data = {
     title: 'Completa tu perfil',
     description:
@@ -28,12 +27,17 @@ const EndProfile = (props) => {
 
   const handleOnSubmit = (event) => {
     event.preventDefault();
-    console.log('presionado');
     setTimeout(() => {
       props.history.push('/check-profile');
     }, 500);
   };
 
+  /**
+     En el siguiente componente se reutiliza el componente de las cajas de texto
+     y se extienden las funsionalidades con las propiedades enviadas, 
+     esto se realiza para cada unas de las paginas
+    
+    */
 
   return (
     <div className='EndProfile'>
@@ -50,6 +54,7 @@ const EndProfile = (props) => {
           setForm={setForm}
           setDisabledButton={setDisabledButton}
           expressionRegular={expression.phoneNumber}
+          countryCodeOpen={true}
         />
         <TextBox
           title='Address'

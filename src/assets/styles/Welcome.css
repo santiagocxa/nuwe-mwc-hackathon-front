@@ -1,0 +1,20 @@
+.Welcome {
+  margin-top: 100px;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  text-decoration: none;
+}
+
+.Welcome h1 {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 40px;
+  color: var(--primary-green);
+  text-decoration: none;
+}
+
+.Welcome img {
+  width: 50%;
+}
