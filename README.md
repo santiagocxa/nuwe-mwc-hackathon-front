@@ -25,7 +25,7 @@ En el directorio raiz encontratas una carpeta llamada **frontend-reto** donde se
   - **Components** -> *Estan cada unos de los componentes funcionales de la app, no se usan class components*
   - **Assets** -> *Econtraras todos archivos de estilos,archivos estaticos y tambien el archivos de routas*
 
-**Las Rutas:** para el manejo de rutas se usa la libreria **react-router-dom** para la elaboracion de este proyecto era una libreria que se acomodaba mucho a la necesidad del desarrollo
+**Las Rutas:** para el manejo de rutas se usa la libreria **react-router-dom** para la elaboracion de este proyecto era una libreria que se acomodaba mucho a la necesidad del desarrollo, uso **HashRouter** para no tener que crear un servidor que sirva las rutas de mi app
 
 **Validaciones:** Los formularios de registro requerian una validacion de tipos, por lo cual se valida con ayuda de expresiones regulares las cuales puedes econtrar en la carpeta **src/assets/utils/**.
 
