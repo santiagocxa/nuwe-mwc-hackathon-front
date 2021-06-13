@@ -1,0 +1,77 @@
+.ItemForm {
+  margin: 0;
+  align-content: center;
+}
+
+.ItemForm-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 70px;
+  margin: 0;
+  margin-top: 15px;
+  margin-bottom: 20px;
+}
+
+
+.ItemForm-title-button {
+  font-size: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 25%;
+  border: 1px solid var(--primary-green);
+  border-radius: 5px;
+  height: 40px;
+  padding: 0 5px 0 5px;
+  text-decoration: none;
+  color: var(--primary-green);
+}
+
+.ItemForm-title-seccion {
+  font-size: 1.4rem;
+  text-align: right;
+  color: gray;
+  margin-bottom: 3px;
+}
+
+.Color-black {
+  color:black;
+  font-weight: bold;
+}
+
+.ItemForm-title-button strong {
+  font-size: 1.6rem;
+  margin: 0;
+  padding: 0;
+}
+
+.ItemForm-container {
+  margin-bottom: 60px;
+}
+
+.ItemForm-container-title {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+.ItemForm-container-description{
+  font-size: 2rem;
+  color: gray;
+}
+
+.ItemForm-login {
+  text-align: center;
+  font-size: 1.6rem;
+}
+
+.ItemForm-login a {
+  text-decoration: none;
+  color: black;
+  cursor: pointer;
+}
+
+.ItemForm-login strong {
+  color: #4f934a;
+}
+

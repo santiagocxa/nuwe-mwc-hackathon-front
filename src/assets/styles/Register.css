@@ -1,0 +1,20 @@
+.Register {
+  padding: 0 20px 0 20px;
+  width: 100;
+  max-width: 400px;
+  height: 100vh;
+}
+
+.Check {
+  width: 100%;
+  display: flex;
+  margin-top: 5px;
+}
+
+.Check-checkbox {
+  margin-right: 10px;
+}
+
+.Check-description {
+  font-size: 1.2rem;
+}

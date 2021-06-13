@@ -1,0 +1,53 @@
+.Card {
+  border: solid 1px var(--primary-green);
+  border-radius: 10px;
+  margin-bottom: 40px;
+}
+
+.Card a {
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  max-width: 400px;
+  text-align: justify;
+  text-decoration: none;
+  color: black;
+  margin: 0;
+  cursor: pointer;
+}
+
+.Card-img {
+  width: 20%;
+}
+
+.Card-img img {
+  width: 100%;
+}
+
+.Card-description {
+  width: 65%;
+}
+
+.Card-description h3 {
+  padding: 0;
+  margin: 0;
+  margin-bottom: 5px;
+  font-size: 1.6rem;
+}
+
+.Card-description p {
+  padding: 0;
+  margin: 0;
+  color: gray;
+  font-size: 1.4rem;
+}
+
+.Card-icon {
+  display: ;
+  font-size: 2rem;
+  padding: 0;
+  margin: 0;
+  font-weight: bold;
+  color: var(--primary-green);
+}

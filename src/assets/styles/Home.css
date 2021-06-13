@@ -1,0 +1,13 @@
+.Home {
+
+}
+
+.Home-about {
+  display: none;
+}
+
+.Home-app {
+  display: flex;
+  flex-wrap:wrap;
+  justify-content: center;
+}

@@ -1,0 +1,80 @@
+.TextBox {
+  width: 100%;
+  max-width: 400px;
+  height: 75px;
+  margin-bottom: 25px;
+}
+
+.TextBox-description {
+  margin-bottom: 10px;
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+
+.TextBox-input {
+  position: relative;
+}
+
+.TextBox-info {
+  width: 100%;
+  height: 40px;
+  margin-bottom: 10px;
+  border: 1px solid gray;
+  border-radius: 5px;
+  outline: none;
+  text-align: center;
+  z-index: 1;
+  padding: 0 35px;
+  margin: 1px;
+}
+
+.TextBox-input-icon {
+  position: absolute;
+  font-size: 2rem;
+  justify-content: center;
+  margin-left: 90%;
+  bottom: 10px;
+  visibility: hidden;
+}
+
+.TextBox-error {
+  color: red;
+  font-weight: bold;
+  margin-left: 5px;
+  visibility: hidden;
+}
+
+
+.Passed {
+  color: var(--primary-green);
+  visibility: visible;
+}
+
+.Stop {
+  color: red;
+  visibility: visible;
+}
+
+
+
+.TextBox-info--select {
+  position: absolute;
+  padding-left: 105px;
+}
+
+.TextBox-info:focus {
+  border: solid 1px var(--primary-green);
+  box-shadow: 0 1px 4px rgb(0 0 0 / 25%);
+  width: 101%;
+}
+
+.TextBox-phone {
+  position: absolute;
+  width: 100px;
+  margin: 2px 0 0 3px;
+  height: 36px;
+  border: 0;
+  background: white;
+  outline: none;
+  cursor: pointer;
+}
