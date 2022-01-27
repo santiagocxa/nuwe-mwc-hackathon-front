@@ -3,6 +3,9 @@ import { Link } from 'react-router-dom';
 import Card from './Card';
 import '../assets/styles/ItemForm.css';
 
+import logoBusiness from '../assets/static/business.png';
+import logoDeveloper from '../assets/static/developer.png';
+
 const ItemForm = (props) => {
   const {
     title,
@@ -11,20 +14,21 @@ const ItemForm = (props) => {
     seccionInfo,
     display,
     route,
+    card,
   } = props.data || [];
 
   /**
-     En el siguiente componente se reutiliza el componente de las tarjetas
-     de inicio se seccion y se extienden las funsionalidades con las propiedades enviadas, 
-     esto se realiza para cada unas de las paginas
+     In the following component, the component of the start cards is reused and
+     the functionalities are extended with the properties sent, 
+     this is done for each of the pages
     
     */
 
   return (
     <div className='ItemForm'>
       {/**
-         En el siguiente fracmento de codigo se renderiza un encabeza o 
-         especie de header que persisten en las paginas de registro
+         In the following code fragment, a header or kind of header is rendered 
+         that persists in the registration pages
       */}
 
       {display === false && (
@@ -33,7 +37,7 @@ const ItemForm = (props) => {
             <strong>{'< '}</strong>back
           </Link>
           <div className='ItemForm-title-description'>
-            <p className='ItemForm-title-seccion'>{`PASO ${seccionNumber}/03`}</p>
+            <p className='ItemForm-title-seccion'>{`Page ${seccionNumber}/03`}</p>
             <p className='ItemForm-title-seccion Color-black'>
               {seccionInfo}
             </p>
@@ -49,12 +53,14 @@ const ItemForm = (props) => {
 
       {display === true && (
         <>
-          <Card />
-          <Card />
+          <strong>Register</strong>
+          <Card key={card[0].id} card={card[0]} img={logoDeveloper} />
+          <Card key={card[1].id} card={card[1]} img={logoBusiness} />
+
           <div className='ItemForm-login'>
-            Ya tienes cuenta?
+            <p>-- or --</p>
             <Link to='/register'>
-              <strong> Inicia sesión</strong>
+              <strong>LogIn</strong>
             </Link>
           </div>
         </>

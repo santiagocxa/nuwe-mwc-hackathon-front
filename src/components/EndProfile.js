@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import ItemForm from './ItemForm';
 import TextBox from './TextBox';
 import Button from './Button';
-import { expression } from '../assets/utils/expressionesRegular';
+import { expression } from '../assets/utils/regularExpressions';
 import '../assets/styles/EndProfile.css';
 
 const EndProfile = (props) => {
@@ -15,13 +15,13 @@ const EndProfile = (props) => {
   const [disabledButton, setDisabledButton] = useState(true);
 
   const data = {
-    title: 'Completa tu perfil',
+    title: 'Complete your profile',
     description:
-      'Para poder revisar de que se trata ingresa una cuenta real, necesitamos la siguiente informacion',
+      'In order to check what it is about entering a real account, we need the following information',
     display: false,
     seccionNumber: '02',
     seccionInfo: 'Personal info',
-    option: 'Guardar y continuar',
+    option: 'Save and Continue',
     route: '/register',
   };
 
@@ -33,9 +33,9 @@ const EndProfile = (props) => {
   };
 
   /**
-     En el siguiente componente se reutiliza el componente de las cajas de texto
-     y se extienden las funsionalidades con las propiedades enviadas, 
-     esto se realiza para cada unas de las paginas
+     In the following component, the text box component is reused and 
+     the functionalities are extended with the sent properties, 
+     this is done for each of the pages
     
     */
 

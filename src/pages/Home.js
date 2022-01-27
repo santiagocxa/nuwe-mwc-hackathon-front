@@ -11,18 +11,13 @@ const Home = ({ children }) => {
           <img src={imgAbout} alt='imgPage' />
         </div>
         <p className='Home-about-p'>
-          CREA COMUNIDAD, MEJORA, ENCUENTRA TRABAJO Y GANA PREMIOS
-          DEMUESTRA TUS HABILIDADES PARTICIPANDO EN LAS HACKATHONES
-          QUE ORGANIZAMOS Y GANA VISIBILIDAD EN EL RANKING DE CARA A
-          LAS EMPRESAS Y A LA COMUNIDAD.
+          CREATE COMMUNITY, IMPROVE YOURSELF, FIND JOB AND WIN PRIZES
+          SHOW OFF YOUR SKILLS BY PARTICIPATING IN THE HACKATHONES
+          WHAT WE ORGANIZE AND GAINS VISIBILITY IN THE RANKING FACE TO
+          THE COMPANIES AND THE COMMUNITY.
         </p>
       </div>
-      <div className='Home-app'>
-     
-
-      {children}
-     
-      </div>
+      <div className='Home-app'>{children}</div>
     </div>
   );
 };

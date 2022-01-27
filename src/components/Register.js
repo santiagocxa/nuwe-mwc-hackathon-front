@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import ItemForm from './ItemForm';
 import TextBox from './TextBox';
 import Button from './Button';
-import { expression } from '../assets/utils/expressionesRegular';
+import { expression } from '../assets/utils/regularExpressions';
 import '../assets/styles/Register.css';
 
 const Register = (props) => {
@@ -85,7 +85,7 @@ const Register = (props) => {
             required='required'
           />
           <p className='Check-description'>
-            Acepto los términos y condiciones
+            I accept the terms and conditions
           </p>
         </div>
         <Button title={data.title} disableButton={disabledButton} />
