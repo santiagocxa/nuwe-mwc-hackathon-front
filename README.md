@@ -1,56 +1,59 @@
-## Hackathon Frontend Para MWC Comunidad NUWE!
-***
+## Hackathon Frontend For MWC Community NUWE!
 
-Este proyecto hace parte de unos retos propuestos en la hackaton para la MWC
+---
 
-En el directorio raiz encontratas una carpeta llamada **frontend-reto** donde se describe el desarrollo a realizar y las pautas para llevarlo a cabo.
+This project is part of some challenges proposed in the hackathon for the MWC
 
-***
+In the root directory you will find a folder called **frontend-challenge** where the development to be carried out and the guidelines to carry it out are described.
 
-**Para divertirte sigue los pasos:**
-- git clone https://github.com/santiagocxa/nuwe-mwc-hackathon-front.git 
+---
 
-- cd nuwe-mwc-hackathon-front 
-
-*instala dependencias e inicia el proyecto*
-- npm install
-- npn run start
-
-***
-
-### **Como esta construido el proyecto:**
-
-- **src**
-  -  **Pages** -> *Econtratas la carpeta principal*
-  - **Components** -> *Estan cada unos de los componentes funcionales de la app, no se usan class components*
-  - **Assets** -> *Econtraras todos archivos de estilos,archivos estaticos y tambien el archivos de routas*
-
-**Las Rutas:** para el manejo de rutas se usa la libreria **react-router-dom** para la elaboracion de este proyecto era una libreria que se acomodaba mucho a la necesidad del desarrollo, uso **HashRouter** para no tener que crear un servidor que sirva las rutas de mi app
-
-**Validaciones:** Los formularios de registro requerian una validacion de tipos, por lo cual se valida con ayuda de expresiones regulares las cuales puedes econtrar en la carpeta **src/assets/utils/**.
-
-
-Para los estilos solo se usa css y algunas variables propias de este.
-
-Tambien me apoyo en la libreria de iconos **@fortawesome** que me ayudo mucho a mejorar la experiencia del usuario con alertas sobre la informacion que se esta ingresando en los input. Te comparto las librerias por si deseas agregar a tu proyecto.
+**To start follow the steps:**
 
 ```sh
-  npm i --save @fortawesome/fontawesome-svg-core
+git clone https://github.com/santiagocxa/nuwe-mwc-hackathon-front.git
+
+cd nuwe-mwc-hackathon-front
+```
+
+_install dependencies and start the project_
+
+```sh
+npm install
+npn run start
+```
+
+---
+
+### **How the project is built:**
+
+- **src**
+  - **Pages** -> _Find the main folder_
+  - **Components** -> _They are each of the functional components of the app, class components are not used_
+  - **Assets** -> _You will find all style files, static files and also the route files_
+
+**The Routes:** for the management of routes the **react-router-dom** library is used for the elaboration of this project it was a library that was very accommodating to the needs of the development, I use **HashRouter** so as not to have to create a server that serves the routes of my app
+
+**Validations:** The registration forms required a type validation, so it is validated with the help of regular expressions which you can find in the folder **src/assets/utils/**.
+
+For the styles, only css and some of its own variables are used.
+
+I also rely on the **@fortawesome** icon library that helped me a lot to improve the user experience with alerts about the information that is being entered in the input. I share the libraries in case you want to add to your project.
+
+```sh
+  npm install --save @fortawesome/fontawesome-svg-core
   npm install --save @fortawesome/free-solid-svg-icons
   npm install --save @fortawesome/react-fontawesome
 ```
 
-Para este proyecto no se requeria persistencia de estado por lo caul no se agrego, pero muy posiblemente en proximos dias lo agregue. Normamete suelo usas **React-redux**
+For this project, state persistence was not required, so it was not added, but very possibly in the next few days I will add it. Normally I usually use **React-redux**
 
-***
+---
 
-## **Por ultimo**:
+## **Finally :**:
 
-Esta este es el deploy de la app https://santiagocxa.github.io/nuwe-mwc-hackathon-front/#/
+This is the deploy of the app https://santiagocxa.github.io/nuwe-mwc-hackathon-front/#/
 
-**Bienvenido el feeback!!**
+**Welcome the feedback!!**
 
-**hay mucho que podria aprender de vos!**
-
-
-
+**There is a lot I could learn from you!**

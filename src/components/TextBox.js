@@ -4,6 +4,7 @@ import {
   faCheckCircle,
   faBan,
 } from '@fortawesome/free-solid-svg-icons';
+import { OrderCountry } from '../assets/utils/OrderCountry';
 import '../assets/styles/TextBox.css';
 
 const TextBox = (props) => {
@@ -13,11 +14,6 @@ const TextBox = (props) => {
     code: '',
   });
 
-  /**
-     En el siguiente estado seteamos las propiedades para mostrar los mensajes de error.
-     por ingresar mal el formato en nuestras cajas de texto
-    
-    */
   const [inputValidation, setInputValidation] = useState({
     passed: '',
     openMessage: '',
@@ -37,24 +33,19 @@ const TextBox = (props) => {
     countryCodeOpen,
   } = props;
 
-  /**
-  La siguiente funcion optiene los datos de la api de indicativos telefonicos
-  
-  */
-  const API = 'https://restcountries.eu/rest/v2/all';
+  const API = 'https://restcountries.com/v3.1/all';
 
   useEffect(() => {
     const getPhoneCode = async () => {
       const data = await fetch(API).then((res) => res.json());
-      setDataPhoneCode(data);
+      setDataPhoneCode(data.sort(OrderCountry));
     };
     getPhoneCode();
   }, [API]);
 
   /**
-  La siguiente funcion captura los eventos en la lista de codigo 
-  y en las cajas de texto para asi optener la data para el estado
-  
+    The following function captures the events in the code list
+    and in the text boxes to obtain the data for the state
   */
   const onChange = (event) => {
     validationTextBox(event.target.value);
@@ -69,12 +60,12 @@ const TextBox = (props) => {
   };
 
   /**
-  Con siguiente funcion nos ayudamos para realizar la validacion
-  de los campos a medida que nuestro usuario ingresa la informacion
-  nuestra funcion hace la evaluacion de los formatos correctos  
+    With the following function we help ourselves to perform the validation
+    of the fields as our user enters the information
+    our function does the evaluation of the correct formats
 
-  Seteamos algunas propiedaddes que nos ayudaran luego a renderizar 
-  los mensajes de error y los iconos de aprovado con ayuda de css
+    We set some properties that will help us later to render
+    error messages and approval icons with the help of css
   */
 
   const validationTextBox = (value) => {
@@ -95,11 +86,6 @@ const TextBox = (props) => {
     }
   };
 
-  /**
-   Este componente se creo buscando ser reutilizado 
-   y asi no crear mas codigo de el necesario, podemos usarlo
-   cada ocacion que necesitemos cajas de texto en nuestos formularios
-  */
   return (
     <div className='TextBox'>
       <p className='TextBox-description'>{title}</p>
@@ -125,31 +111,30 @@ const TextBox = (props) => {
         </div>
 
         {/**
-          Este fragmento de codigo agregamos la utilidad de nuestra
-          lista desplegable para elegir el indicativo telefonico de 
-          nuestro pais.
+          This code snippet we add the utility of our
+          drop-down list to choose the telephone code of
+          our country.
 
-          Con una pequeña validacion logramos usar el mismo componente
-          de las cajas de texto solo que extendemos su funcionalidad
+          With a little validation we managed to use the same component
+          of the text boxes only that we extend its functionality
           
         */}
         {countryCodeOpen === true && dataPhoneCode != null && (
           <select
             className='TextBox-phone'
-            value={codeCountry.code}
             name='phone'
             onChange={onChange}
           >
             {dataPhoneCode.map((item) => (
-              <option key={item.name} value={item.name}>
-                {` +${item.callingCodes}  ${item.name}`}
+              <option key={item.cca3}>
+                {`${item.idd.root}${item.idd.suffixes}  ${item.name.common} `}
               </option>
             ))}
           </select>
         )}
       </div>
       <p className={`TextBox-error${inputValidation.openMessage}`}>
-        Enter a valid format
+        INCORRECT FORMAT
       </p>
     </div>
   );

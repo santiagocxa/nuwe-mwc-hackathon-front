@@ -39,6 +39,14 @@
   font-weight: bold;
 }
 
+.ItemForm strong {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 45px;
+  color: var(--primary-green);
+  font-size: 1.6rem;
+}
+
 .ItemForm-title-button strong {
   font-size: 1.6rem;
   margin: 0;
@@ -64,6 +72,10 @@
   font-size: 1.6rem;
 }
 
+.ItemForm-login p {
+  margin-bottom: 32px;
+}
+
 .ItemForm-login a {
   text-decoration: none;
   color: black;
@@ -71,5 +83,10 @@
 }
 
 .ItemForm-login strong {
-  color: #4f934a;
+  color: var(--primary-green);
+  font-size: 1.8rem;
+}
+
+.ItemForm-login strong:hover {
+  color: black;
 }

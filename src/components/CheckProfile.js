@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import ItemForm from './ItemForm';
 import TextBox from './TextBox';
 import Button from './Button';
-import { expression } from '../assets/utils/expressionesRegular';
+import { expression } from '../assets/utils/regularExpressions';
 import '../assets/styles/CheckProfile.css';
 
 const CheckProfile = (props) => {
@@ -11,11 +11,11 @@ const CheckProfile = (props) => {
     securityCode: '',
   });
   const data = {
-    title: 'Verifica tu perfil',
+    title: 'Check your profiles',
     description:
-      'Para poder de que se trata ingresa una cuenta real, necesitamos la siguiente informacion',
+      'To be able to enter a real account, we need the following information',
     display: false,
-    option: 'Guardar y continuar',
+    option: 'Save and Continue',
     seccionNumber: '03',
     seccionInfo: 'Personal info',
     route: '/end-profile',
@@ -30,11 +30,10 @@ const CheckProfile = (props) => {
   };
 
   /**
-     En el siguiente componente se reutiliza el componente de las cajas de texto
-     y se extienden las funsionalidades con las propiedades enviadas, 
-     esto se realiza para cada unas de las paginas
-    
-    */
+    In the following component the component of the text boxes is reused and 
+    the functionalities are extended with the sent properties, 
+    this is done for each of the pages  
+  */
 
   return (
     <div className='CheckProfile'>
